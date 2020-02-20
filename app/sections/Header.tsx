@@ -1,7 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 
-export class Header extends React.Component {
+interface State { isLoggedIn: boolean }
+interface Props { message: string}
+
+export class Header extends React.Component <Props, State> {
   constructor(props) {
     super(props);
     this.state = { isLoggedIn: false };
