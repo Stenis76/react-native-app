@@ -7,10 +7,10 @@ export class Home extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Header message = 'Press to Login' />
+        <Header message = 'Press to0 Login' />
         <Hero />
         
-        <Text style={{flex:6}}>Hello, world22!</Text>
+        <Text style={{flex:6}}>Hello, world222!</Text>
       
       </View>
     );
