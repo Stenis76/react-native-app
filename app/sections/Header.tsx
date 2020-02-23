@@ -17,13 +17,13 @@ export class Header extends React.Component <Props, State> {
   };
 
   render() {
-    let display = this.state.isLoggedIn ? "Sample User" : this.props.message;
+    let display = this.state.isLoggedIn ? "Dick Stenqvist" : this.props.message;
     return (
       <View style={styles.headStyle}>
-        <Image
+        {/* <Image
           style={styles.logoStyle}
           source={ require('./img/bot.jpg')}
-        />
+        /> */}
           <Text 
           style={styles.headText} 
           onPress={this.toggleUser}>
@@ -37,7 +37,8 @@ const styles = StyleSheet.create({
   headText: {
     textAlign: "right",
     color: "#ffffff",
-    fontSize: 20
+    fontSize: 20,
+    padding: 10,
   },
   headStyle: {
     paddingTop: 40,
@@ -45,8 +46,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#8fc1e3",
     flex: 1,
     flexDirection: 'row',
+    justifyContent: 'flex-end',
     borderBottomWidth: 2,
     borderColor: 'black',
+    alignItems: 'center'
   },
   logoStyle:{
     flex: 1,
