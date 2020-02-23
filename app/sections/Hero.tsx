@@ -16,7 +16,7 @@ const styles = StyleSheet.create ({
   heroImage: {
     width: undefined,
     height: undefined,
-    flex:8,
+    flex: 10,
 
   }
 });

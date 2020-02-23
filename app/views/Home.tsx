@@ -2,15 +2,26 @@ import React  from 'react';
 import { StyleSheet, Text, View} from 'react-native';
 import { Header } from "../sections/Header";
 import { Hero } from "../sections/Hero";
+import { Menu } from "../sections/Menu";
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-export class Home extends React.Component {
+interface Props {
+  
+}
+
+export class Home extends React.Component<Props, {}> {
+  
   render(){
+    
+    
+    
     return (
       <View style={styles.container}>
-        <Header message = 'Press to0 Login' />
+        <Header message = 'Press to Login' />
         <Hero />
         
-        <Text style={{flex:6}}>Hello, world222!</Text>
+        <Menu />
       
       </View>
     );
@@ -20,6 +31,7 @@ export class Home extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#5085a5',
 
   }
 });
