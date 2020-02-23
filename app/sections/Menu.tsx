@@ -11,19 +11,19 @@ export class Menu extends React.Component {
       <View style={styles.container}>
         <View style={styles.buttonRow}>
           <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
-            <Text style={styles.buttonText}>NAV 1</Text>
+            <Text style={styles.buttonText}>WEATHER</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
-            <Text style={styles.buttonText}>NAV 2</Text>
+            <Text style={styles.buttonText}>PLAY SONG</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.buttonRow}>
           <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
-            <Text style={styles.buttonText}>NAV 3</Text>
+            <Text style={styles.buttonText}>TWEET</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
-            <Text style={styles.buttonText}>CONTACT</Text>
+            <Text style={styles.buttonText}>LAUNCH NUKE</Text>
           </TouchableOpacity>
         </View>
       </View>

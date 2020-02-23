@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Header } from '../sections/Header';
+import { Hero } from '../sections/Hero';
 
 export class Contact extends React.Component {
   public static navigationOptions = {
@@ -11,8 +12,10 @@ export class Contact extends React.Component {
     return (
       <View style={styles.container}>
         <Header message = 'Press to Login' />
-        <Text style={{flex:8}}>contact jform</Text>
-        <Text style={{flex:6}}>contactform</Text>
+        <Hero />
+        <Text style={{flex:1}}>My Contacts: </Text>
+       
+        
       </View>
     );
   }
@@ -21,5 +24,6 @@ export class Contact extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#5085a5'
   }
 });

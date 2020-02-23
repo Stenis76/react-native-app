@@ -31,6 +31,7 @@ export class Home extends React.Component<Props, {}> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#5085a5',
 
   }
 });

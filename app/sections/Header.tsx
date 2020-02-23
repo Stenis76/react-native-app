@@ -17,13 +17,10 @@ export class Header extends React.Component <Props, State> {
   };
 
   render() {
-    let display = this.state.isLoggedIn ? "Dick Stenqvist" : this.props.message;
+    let display = this.state.isLoggedIn ? "Donald Trump" : this.props.message;
     return (
       <View style={styles.headStyle}>
-        {/* <Image
-          style={styles.logoStyle}
-          source={ require('./img/bot.jpg')}
-        /> */}
+        
           <Text 
           style={styles.headText} 
           onPress={this.toggleUser}>
